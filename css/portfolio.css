@@ -873,14 +873,7 @@ textarea {
 
 .our-team-flex-li {
   border-radius: 4px 4px 0px 0px;
-}
-
-.our-team-flex-li:nth-child(4n) {
-  margin-right: 0px;
-}
-
-.our-team-flex-li:nth-last-child(-n + 4) {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 
 .photo-workers {

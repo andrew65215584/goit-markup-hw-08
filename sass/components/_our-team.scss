@@ -15,14 +15,15 @@
 	// width: calc((100% - 3*30px) / 4);
 	// margin-right: 30px;
 	border-radius: 4px 4px 0px 0px;
+	margin-bottom: 30px;
 }
 
-.our-team-flex-li:nth-child(4n) {
-	margin-right: 0px;
-}
-.our-team-flex-li:nth-last-child(-n + 4) {
-	margin-bottom: 0px;
-}
+// .our-team-flex-li:nth-child(4n) {
+// 	margin-right: 0px;
+// }
+// .our-team-flex-li:nth-last-child(-n + 4) {
+// 	margin-bottom: 0px;
+// }
 
 .photo-workers {
 	display: block;
