@@ -1,5 +1,8 @@
 html {
 	box-sizing: border-box;
+	overflow-x: hidden;
+    overflow-y: auto;
+
 }
 
 *,
@@ -20,6 +23,11 @@ svg {
 	height: auto;
 }
 
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
 body {
 	font-family: Roboto, sans-serif;
 	letter-spacing: 0.03em;
@@ -27,7 +35,26 @@ body {
 	line-height: 1.19;
 
 	background-color: $background-color;
+
+	overflow-x: hidden;
+	overflow-y: auto;
+	min-width: 320px;
+	
 }
+
+@media screen and (max-width: 480px){
+
+	body {
+		font-size: 14px;
+		line-height: 1.71;
+	}
+
+}
+
+
+
+
+
 
 ul {
 	list-style: none;

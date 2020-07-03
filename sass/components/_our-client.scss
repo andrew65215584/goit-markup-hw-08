@@ -2,20 +2,28 @@
 
 .our-usual-client-list {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0px;
 	margin: 0px;
 	list-style: none;
 }
 
-.our-usual-client-list li:not(:last-child) {
+.our-usual-client-li {
+	width: calc((100% - 30px) / 2);
 	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+.our-usual-client-li:nth-child(2n) {
+	margin-right: 0px;
+	margin-bottom: 0px;
 }
 
 .our-usual-client-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 170px;
+	width: 210px;
 	height: 90px;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
