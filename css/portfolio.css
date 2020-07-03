@@ -529,19 +529,18 @@ textarea {
           align-items: center;
 }
 
-.button-portfolio:hover,
-.button-portfolio:focus {
-  color: #212121;
-}
-
 .button-portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 50px;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: #212121;
 }
 
 .button-portfolio .lil {
@@ -630,14 +629,16 @@ textarea {
 }
 
 .example {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
   margin-bottom: 30px;
   list-style: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.example:last-child {
+  margin-bottom: 0px;
 }
 
 .example .link {
@@ -718,6 +719,7 @@ textarea {
 .portfolio-img {
   border-radius: 5px 5px 0px 0px;
   display: block;
+  width: 100%;
 }
 
 .benefits {
@@ -1006,12 +1008,12 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0px;
-  margin: -5px;
+  margin: -15px;
   list-style: none;
 }
 
 .our-usual-client-li {
-  padding: 5px;
+  padding: 15px;
   width: calc(100% / 2);
 }
 

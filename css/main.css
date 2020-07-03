@@ -529,19 +529,18 @@ textarea {
           align-items: center;
 }
 
-.button-portfolio:hover,
-.button-portfolio:focus {
-  color: #212121;
-}
-
 .button-portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 50px;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: #212121;
 }
 
 .button-portfolio .lil {
@@ -873,12 +872,12 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0px;
-  margin: -5px;
+  margin: -15px;
   list-style: none;
 }
 
 .our-usual-client-li {
-  padding: 5px;
+  padding: 15px;
   width: calc(100% / 2);
 }
 

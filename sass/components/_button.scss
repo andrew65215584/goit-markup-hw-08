@@ -26,16 +26,23 @@
 	align-items: center;
 }
 
+
+
+.button-portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	
+	// justify-content: center;
+	margin-bottom: 50px;
+}
+
+
 .button-portfolio:hover,
 .button-portfolio:focus {
 	color: #212121;
 }
 
-.button-portfolio {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
-}
+
 
 .button-portfolio .lil {
 	margin-right: 8px;
