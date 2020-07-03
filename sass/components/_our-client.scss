@@ -9,9 +9,14 @@
 }
 
 .our-usual-client-li {
-	width: calc((100% - 30px) / 2);
-	margin-right: 30px;
-	margin-bottom: 30px;
+	// width: calc((100% - 30px) / 2);
+
+    padding: 5px;
+    width: calc(100% / 2);
+
+
+	// margin-right: 30px;
+	// margin-bottom: 30px;
 }
 
 .our-usual-client-li:nth-child(2n) {
