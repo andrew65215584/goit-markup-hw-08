@@ -3,6 +3,13 @@
 .footer {
 	background-color: #2f303a;
 	text-align: center;
+
+	@media screen and (min-width: 768px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		padding-right: 80px;
+		padding-left: 80px;
+	}
 }
 
 .footer-flex {
@@ -13,8 +20,19 @@
 	padding-bottom: 48px;
 }
 
+.footer-wrapper {
+	@media screen and (min-width: 768px) {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
 .footer-address-div {
 	margin-bottom: 60px;
+
+	@media screen and (min-width: 768px) {
+		margin-right: 165px;
+	}
 }
 
 .call-to-action-footer {
@@ -56,6 +74,10 @@
 
 	line-height: 1.25;
 	letter-spacing: 0.03em;
+
+	@media screen and (min-width:768px) {
+		width: 450px;
+	}
 }
 
 .main-logo {

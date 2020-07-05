@@ -1,10 +1,26 @@
-.header {
-	padding-left: 15px;
-	padding-right: 15px;
+.logo {
+	display: block;
+
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 26px;
+	line-height: 1.2;
+
+	color: $title-text-color;
 }
+
+.accent-logo {
+	color: $accent-color;
+}
+
+.site-nav-item {
+	position: relative;
+}
+
 
 .site-nav {
 	color: $primary-text-color;
+	text-align: center;
 }
 
 .site-nav-list {
@@ -12,14 +28,25 @@
 	padding: 0px;
 }
 
-.contacts-list {
-	margin: 0px;
+.site-nav-list .link {
+	position: relative;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	text-decoration: none;
+	color: $title-text-color;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: inline-block;
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts {
-	display: inline-block;
-	
+.site-nav .link.current {
+	color: $accent-color;
 }
+
+
 
 .svg-item {
 	display: inline-block;
@@ -29,14 +56,41 @@
 }
 
 
-
-@media screen and (min-width: 480px) {
-	.site-nav {
-		text-align: center;
-	}
-
-	
+.contacts {
+	display: inline-block;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	color: $primary-text-color;
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.link.current::after {
+	content: "";
+
+	position: absolute;
+	bottom: -1px;
+	transform: translateX(-100%);
+
+	height: 4px;
+	width: 100%;
+	border-radius: 2px;
+
+	background: $accent-color;
+}
+
+
+.contacts-item:hover .svg-item,
+.contacts-item:hover .contacts-text {
+	fill: $accent-color;
+	color: $accent-color;
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
 
 @media screen and (max-width: 767px) {
 
@@ -59,7 +113,7 @@
 	.nav-button {
 		display: inline-flex;
 		margin-left: auto;
-		margin-right: 15px;
+		
 	
 
 		padding: 0px;
@@ -110,6 +164,8 @@
 		margin-bottom: 60px;
 	}
 
+	
+
 	.site-nav-item:not(:last-child) {
 		margin-bottom: 40px;
 	}
@@ -124,13 +180,12 @@
 }
 
 @media screen and (min-width: 768px) {
-	.container {
-		width: 738px;
-	}
+	
 
 	.container-site-nav {
 		display: flex;
 		align-items: center;
+		
 	}
 
 	.site-nav {
@@ -138,17 +193,32 @@
 		align-items: center;
 	}
 
+	
 	.site-nav-list {
 		display: flex;
 		margin-top: 0px;
 		margin-bottom: 0px;
-		margin-left: 85px;
+		
 		padding-left: 0px;
 
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 1.14;
 		letter-spacing: 0.02em;
+	}
+
+	.site-nav-list .link {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+	
+	.nav-button {
+		display: none;
+	}
+
+	.menu {
+		display: flex;
+		margin-left: auto;
 	}
 
 	.site-nav-item:not(:last-child) {
@@ -166,8 +236,11 @@
 		margin-left: auto;
 		margin-top: 0px;
 		margin-bottom: 0px;
+		margin-left: 81px;
 
 		padding-left: 0px;
+		padding-top: 20px;
+		padding-bottom: 19px;
 
 		font-weight: 500;
 		font-size: 12px;
@@ -188,7 +261,16 @@
 		width: 10px;
 		height: 14px;
 	}
+
+
+
+
 }
+
+
+
+
+
 
 @media screen and (min-width: 1200px) {
 	
@@ -198,28 +280,8 @@
 
 
 
-.site-nav .link.current {
-	color: $accent-color;
-}
 
-.logo {
-	// display: block;
 
-	text-decoration: none;
-	font-family: 'Raleway', sans-serif;
-	font-size: 26px;
-	line-height: 1.2;
-
-	color: $title-text-color;
-}
-
-.accent-logo {
-	color: $accent-color;
-}
-
-.site-nav-item {
-	position: relative;
-}
 
 // .site-nav-item:not(:last-child) {
 // 	// margin-right: 50px;
@@ -231,33 +293,9 @@
 	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav-list .link {
-	position: relative;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	text-decoration: none;
-	color: $title-text-color;
 
-	padding-top: 10px;
-	padding-bottom: 10px;
-	display: inline-block;
-	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.link.current::after {
-	content: "";
 
-	position: absolute;
-	bottom: -1px;
-	transform: translateX(-100%);
-
-	height: 4px;
-	width: 100%;
-	border-radius: 2px;
-
-	background: $accent-color;
-}
 
 .contacts-list {
 	// display: flex;
@@ -274,20 +312,6 @@
 // 	margin-right: 0px;
 // }
 
-.contacts {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-	text-decoration: none;
-	color: $primary-text-color;
-	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 
-.contacts-item:hover .svg-item,
-.contacts-item:hover .contacts-text {
-	fill: $accent-color;
-	color: $accent-color;
-	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
