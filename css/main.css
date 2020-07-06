@@ -299,6 +299,32 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    display: inline-block;
+  }
+  .menu {
+    margin-left: 85px;
+    width: 80%;
+  }
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+  }
+  .contacts-item {
+    margin-bottom: 0px;
+  }
+}
+
 .site-nav-list .link:hover,
 .site-nav-list .link:focus {
   color: #2196f3;

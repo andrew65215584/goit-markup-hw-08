@@ -273,8 +273,28 @@
 
 
 @media screen and (min-width: 1200px) {
-	
 
+	.logo {
+		display: inline-block;
+	}
+	
+	.menu {
+		margin-left: 85px;
+		width: 80%;
+	}
+
+
+	.contacts-list {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-left: auto;
+	}
+
+	.contacts-item {
+		margin-bottom: 0px;
+		
+	}
 
 }
 
