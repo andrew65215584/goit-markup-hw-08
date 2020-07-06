@@ -26,8 +26,12 @@
 }
 
 .benefits-list {
+	// базовые стили класса
+
 	width: 100%;
 	margin-bottom: 30px;
+
+	// стили класса от таблетки до компа
 
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		width: calc((100% - 30px) / 2);
@@ -37,6 +41,8 @@
 			margin-right: 0px;
 		}
 	}
+
+	// стили класса для компа
 
 	@media screen and (min-width: 1200px) {
 		width: calc((100% - 90px) / 4);
