@@ -1,29 +1,32 @@
-/* footer */
-
 .footer {
 	background-color: #2f303a;
 	text-align: center;
-
-	@media screen and (min-width: 768px) {
-		padding-top: 60px;
-		padding-bottom: 60px;
-		padding-right: 80px;
-		padding-left: 80px;
-	}
 }
 
 .footer-flex {
-	// display: flex;
-	// align-items: baseline;
-	// justify-content: space-between;
 	padding-top: 48px;
 	padding-bottom: 48px;
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+	}
 }
 
 .footer-wrapper {
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 380px) and (max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		display: flex;
 		justify-content: space-around;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
 	}
 }
 
@@ -33,6 +36,11 @@
 	@media screen and (min-width: 768px) {
 		margin-right: 165px;
 	}
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 69px;
+		margin-bottom: 0px;
+	}
 }
 
 .call-to-action-footer {
@@ -41,22 +49,44 @@
 	margin-bottom: 60px;
 }
 
-// .subscript-footer {
-// 	display: flex;
-// 	flex-direction: column;
-// }
-
-// .form-subscribe {
-// 	display: flex;
-// }
+.subscript-footer .call-to-action {
+	@media screen and (min-width: 1200px) {
+		text-align: left;
+	}
+}
 
 .form-subscribe {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-right: auto;
-	margin-left: auto;
+	// @media screen and (min-width: 768px) and (max-width: 1199px) {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// }
+
+	@media screen and (max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
+}
+
+.form-subscribe .button.primary {
+	@media screen and (min-width: 768px) and (max-width: 1199) {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .subscribe-input {
@@ -67,7 +97,6 @@
 	caret-color: white;
 	color: rgba(255, 255, 255, 0.6);
 
-	width: 100%;
 	height: 50px;
 	padding-left: 16px;
 	margin-bottom: 20px;
@@ -75,8 +104,17 @@
 	line-height: 1.25;
 	letter-spacing: 0.03em;
 
+	width: 350px;
+
 	@media screen and (min-width:768px) {
 		width: 450px;
+		
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 358px;
+		margin-bottom: 0px;
+		margin-right: 12px;
 	}
 }
 

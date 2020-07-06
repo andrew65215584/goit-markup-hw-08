@@ -16,16 +16,30 @@
 .our-team-flex-li {
 	border-radius: 4px 4px 0px 0px;
 	margin-bottom: 30px;
+	width: 100%;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		width: calc((100% - 30px) / 2);
 		margin-right: 30px;
 
 		&:nth-child(2n) {
 			margin-right: 0px;
 		}
+
+		&:nth-last-child(-n + 2) {
+			margin-bottom: 0px;
+		}
 	}
-	
+
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 90px) / 4);
+		margin-right: 30px;
+		margin-bottom: 0px;
+
+		&:nth-child(4n) {
+			margin-right: 0px;
+		}
+	}
 }
 
 // .our-team-flex-li:nth-child(4n) {

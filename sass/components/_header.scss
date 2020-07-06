@@ -17,7 +17,6 @@
 	position: relative;
 }
 
-
 .site-nav {
 	color: $primary-text-color;
 	text-align: center;
@@ -46,15 +45,12 @@
 	color: $accent-color;
 }
 
-
-
 .svg-item {
 	display: inline-block;
 	vertical-align: bottom;
 	margin-right: 10px;
 	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .contacts {
 	display: inline-block;
@@ -81,7 +77,6 @@
 	background: $accent-color;
 }
 
-
 .contacts-item:hover .svg-item,
 .contacts-item:hover .contacts-text {
 	fill: $accent-color;
@@ -89,14 +84,9 @@
 	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-
 @media screen and (max-width: 767px) {
-
 	.header {
 		position: relative;
-		
 	}
 
 	.container-site-nav {
@@ -113,8 +103,6 @@
 	.nav-button {
 		display: inline-flex;
 		margin-left: auto;
-		
-	
 
 		padding: 0px;
 		border: none;
@@ -152,7 +140,7 @@
 
 		text-align: center;
 		font-size: 20px;
-		border-top: 1px solid #ECECEC;
+		border-top: 1px solid #ececec;
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
 	}
 
@@ -164,8 +152,6 @@
 		margin-bottom: 60px;
 	}
 
-	
-
 	.site-nav-item:not(:last-child) {
 		margin-bottom: 40px;
 	}
@@ -173,19 +159,12 @@
 	.contacts-item:not(:last-child) {
 		margin-bottom: 16px;
 	}
-
-
-
-
 }
 
 @media screen and (min-width: 768px) {
-	
-
 	.container-site-nav {
 		display: flex;
 		align-items: center;
-		
 	}
 
 	.site-nav {
@@ -193,12 +172,11 @@
 		align-items: center;
 	}
 
-	
 	.site-nav-list {
 		display: flex;
 		margin-top: 0px;
 		margin-bottom: 0px;
-		
+
 		padding-left: 0px;
 
 		font-weight: 500;
@@ -211,7 +189,7 @@
 		padding-top: 32px;
 		padding-bottom: 32px;
 	}
-	
+
 	.nav-button {
 		display: none;
 	}
@@ -261,28 +239,17 @@
 		width: 10px;
 		height: 14px;
 	}
-
-
-
-
 }
 
-
-
-
-
-
 @media screen and (min-width: 1200px) {
-
 	.logo {
 		display: inline-block;
 	}
-	
+
 	.menu {
 		margin-left: 85px;
 		width: 80%;
 	}
-
 
 	.contacts-list {
 		display: flex;
@@ -291,17 +258,23 @@
 		margin-left: auto;
 	}
 
-	.contacts-item {
+	.contacts-list .contacts-item {
 		margin-bottom: 0px;
-		
 	}
 
+	.contacts-list .contacts-item:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	.contacts {
+		display: inline-flex;
+		align-items: center;
+	}
+
+
+	
+
 }
-
-
-
-
-
 
 // .site-nav-item:not(:last-child) {
 // 	// margin-right: 50px;
@@ -312,10 +285,6 @@
 	color: $accent-color;
 	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
-
 
 .contacts-list {
 	// display: flex;
@@ -331,7 +300,3 @@
 // .contacts-item:nth-child(2) {
 // 	margin-right: 0px;
 // }
-
-
-
-

@@ -22,14 +22,14 @@
 
 	@media screen and (min-width: 768px) {
 		text-align: left;
-		
 	}
 }
 
 .benefits-list {
+	width: 100%;
 	margin-bottom: 30px;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		width: calc((100% - 30px) / 2);
 		margin-right: 30px;
 
@@ -37,9 +37,16 @@
 			margin-right: 0px;
 		}
 	}
+
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 90px) / 4);
+		margin-right: 30px;
+
+		&:nth-child(4n) {
+			margin-right: 0px;
+		}
+	}
 }
-
-
 
 .benefits-list-image {
 	width: 100%;

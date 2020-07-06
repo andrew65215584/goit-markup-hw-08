@@ -5,11 +5,14 @@
 }
 
 .about-our-work-ul {
-	// display: flex;
-	// flex-wrap: wrap;
 	padding-left: 0px;
 	margin: 0px;
 	list-style: none;
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 .about-our-work-li {
@@ -51,29 +54,20 @@
 
 .about-our-work-li > img {
 	display: block;
-	
 }
 
-	.section-our-work {
-		display: none;
-	}
-
-@media screen and (min-width: 480px){
-
-	
-
-}
-
-@media screen and (min-width: 768px){
-
-	
-}
-
-@media screen and (min-width: 1200px){
 .section-our-work {
+	display: none;
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+	.section-our-work {
 		display: block;
 	}
-
-	
-
 }
